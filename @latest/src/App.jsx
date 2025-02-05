@@ -15,12 +15,12 @@ function App() {
         </nav>
       </header>
 
-      <section id="about">
+      <section id="about" className="section full-screen">
         <h2>About Me</h2>
         <p>Hi, I'm [Your Name], a passionate web developer.</p>
       </section>
 
-      <section id="projects">
+      <section id="projects" className="section full-screen">
         <h2>Projects</h2>
         <ul>
           <li>Project 1 - Description</li>
@@ -29,7 +29,7 @@ function App() {
         </ul>
       </section>
 
-      <section id="contact">
+      <section id="contact" className="section full-screen">
         <h2>Contact</h2>
         <p>Email: yourname@example.com</p>
         <p>LinkedIn: <a href="https://linkedin.com/in/yourname" target="_blank" rel="noopener noreferrer">linkedin.com/in/yourname</a></p>
