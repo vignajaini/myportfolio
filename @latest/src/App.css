@@ -1,30 +1,32 @@
-/* General Styles */
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: Arial, sans-serif;
 }
-
+html, body {
+  background-color: black;
+  margin: 1px;
+  padding: 4px;
+  scroll-behavior: smooth;
+}
 body {
-  background-color: #f4f4f4;
+  background-color: #141313;
   text-align: center;
   color:black gradient;
+  text-align: center;
 }
-
-/* Container */
 .app-container {
-  max-width: 900px;
+  max-width: 100%;
   margin: auto;
-  padding: 20px;
+  padding: 0;
 }
-
-/* Header */
 header {
-  background-image: linear-gradient(to right top, #3f353b, #3d353c, #3b363e, #39363f, #37373f,
-   #3b3d45, #3f444c, #434a52, #4d5960, #58686d, #647779, #728685);
+  background-image: linear-gradient(to right top, #3f353b, #3d353c, #272528, #39363f, #37373f,
+   #232324, #303236, #383b3f, #33383b, #393c3d, #333636, #323535);
   color: white;
-  padding: 20px 0;
+  
 }
 
 header h1 {
@@ -48,7 +50,6 @@ nav ul li a {
   font-weight: bold;
 }
 
-/* Sections */
 section {
   padding: 40px 20px;
   margin: 20px 0;
@@ -56,6 +57,10 @@ section {
   #5c1e4e, #54265a, #4a2e64, #3c356d, #2e3d74, #1d4578, #004c7b, #00557a, #005d75, #00646c, #176963);
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  height: 100vh; 
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
 h2 {
@@ -63,7 +68,6 @@ h2 {
   margin-bottom: 10px;
 }
 
-/* Project List */
 #projects ul {
   list-style: none;
   padding: 0;
@@ -76,14 +80,12 @@ h2 {
   border-radius: 5px;
 }
 
-/* Contact Section */
 #contact a {
   color: #007BFF;
   text-decoration: none;
   font-weight: bold;
 }
 
-/* Footer */
 footer {
   background-image: linear-gradient(to right top, #3f353b, #3d353c, #3b363e, #39363f,
    #37373f, #3b3d45, #3f444c, #434a52, #4d5960, #58686d, #647779, #728685);
