@@ -26,11 +26,10 @@ header {
   background-image: linear-gradient(to right top, #3f353b, #3d353c, #272528, #39363f, #37373f,
    #232324, #303236, #383b3f, #33383b, #393c3d, #333636, #323535);
   color: white;
-  
 }
 
 header h1 {
-  margin-bottom: 10px;
+  margin-bottom:10px;
 }
 
 nav ul {
@@ -52,9 +51,8 @@ nav ul li a {
 
 section {
   padding: 40px 20px;
-  margin: 20px 0;
-  background-image: linear-gradient(to right top, #601741, 
-  #5c1e4e, #54265a, #4a2e64, #3c356d, #2e3d74, #1d4578, #004c7b, #00557a, #005d75, #00646c, #176963);
+  margin: 10px 0;
+   background-image: linear-gradient(to right top, #051937, #141c45, #281e51, #3f1c5a, #57155f);
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   height: 100vh; 
@@ -64,6 +62,10 @@ section {
 }
 
 h2 {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  
+  font-size:3rem;
+
   color: #151414;
   margin-bottom: 10px;
 }
@@ -92,4 +94,18 @@ footer {
   color: white;
   padding: 15px 0;
   margin-top: 20px;
+}
+
+
+.rainbow-text {
+  font-family:Georgia;  
+  font-weight:550;
+  text-transform: uppercase;
+    font-size: 2.5rem;
+    background-image: linear-gradient(to right, orange, red,orange);
+    background-clip: text; 
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+    display: inline-block;
 }

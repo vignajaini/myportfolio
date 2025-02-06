@@ -8,16 +8,21 @@ function App() {
         <h1>My Portfolio</h1>
         <nav>
           <ul>
+          <li><a href="#Home">Home</a></li>
             <li><a href="#about">About</a></li>
-            <li><a href="#projects">Projects</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#Achievements">Achievements</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
         </nav>
       </header>
+      <section id="Home" className="section full-screen">
+        <p class="rainbow-text">Hi, I'm Vigna Jaini</p>
+      </section>
 
       <section id="about" className="section full-screen">
         <h2>About Me</h2>
-        <p>Hi, I'm [Your Name], a passionate web developer.</p>
+        <p class="rainbow-text">Hi, I'm Vigna Jaini</p>
       </section>
 
       <section id="projects" className="section full-screen">
