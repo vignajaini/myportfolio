@@ -1,4 +1,8 @@
 import React from "react";
+import Home from "./Home";
+import About from "./About";
+import Projects from "./Projects";
+import Contact from "./Contact";
 import "./App.css";
 
 function App() {
@@ -8,42 +12,21 @@ function App() {
         <h1>My Portfolio</h1>
         <nav>
           <ul>
-          <li><a href="#Home">Home</a></li>
+            <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#Achievements">Achievements</a></li>
+            <li><a href="#projects">Projects</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
         </nav>
       </header>
-      <section id="Home" className="section full-screen">
-        <p class="rainbow-text">Hi, I'm Vigna Jaini</p>
-      </section>
 
-      <section id="about" className="section full-screen">
-        <h2>About Me</h2>
-        <p class="rainbow-text">Hi, I'm Vigna Jaini</p>
-      </section>
-
-      <section id="projects" className="section full-screen">
-        <h2>Projects</h2>
-        <ul>
-          <li>Project 1 - Description</li>
-          <li>Project 2 - Description</li>
-          <li>Project 3 - Description</li>
-        </ul>
-      </section>
-
-      <section id="contact" className="section full-screen">
-        <h2>Contact</h2>
-        <p>Email: yourname@example.com</p>
-        <p>LinkedIn: <a href="https://linkedin.com/in/yourname" target="_blank" rel="noopener noreferrer">linkedin.com/in/yourname</a></p>
-        <p>GitHub: <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer">github.com/yourusername</a></p>
-       
-      </section>
+      <Home />
+      <About />
+      <Projects />
+      <Contact />
 
       <footer>
-        <p>&copy; 2024 Your Name. All Rights Reserved.</p>
+        <p>&copy; 2025 Vigna. All Rights Reserved.</p>
       </footer>
     </div>
   );
