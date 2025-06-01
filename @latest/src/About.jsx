@@ -5,7 +5,7 @@ const About = () => {
   const [show, setShow] = useState(false);
 
   useEffect(() => {
-    setTimeout(() => setShow(true), 300); // Delay for smooth fade-in
+    setTimeout(() => setShow(true), 300); 
   }, []);
 
   return (
