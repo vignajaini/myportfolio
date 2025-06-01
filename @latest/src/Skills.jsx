@@ -30,7 +30,7 @@ const skills = {
 
 const Skills = () => {
   return (
-    <section className="skills-container">
+    <section id="skills" className="skills-container">
       <h2 className="skills-header">My Skills</h2>
       {Object.entries(skills).map(([category, skillList]) => (
         <div key={category} className="skills-category">
