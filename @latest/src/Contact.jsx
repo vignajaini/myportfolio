@@ -14,7 +14,7 @@ const Contact = () => {
         </form>
 
         <div className="contact-info">
-          <p><strong>Email:</strong> your.email@example.com</p>
+          <p><strong>Email:</strong> jainivigna4@gmail.com</p>
           <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/vigna-jaini-019031316" target="_blank">linkedin</a></p>
           <p><strong>Git hub:</strong><a href="https://github.com/vignajaini"target="_blank">GitHub</a></p>
         </div>
