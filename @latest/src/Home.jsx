@@ -35,13 +35,7 @@ const Home = () => {
           </p>
         </div>
 
-        <div className="home-image">
-          <img
-            src="/profile.jpg"
-            alt="Vigna Jaini"
-            className="profile-pic"
-          />
-        </div>
+       
       </div>
     </section>
   );
