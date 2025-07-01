@@ -1,69 +1,102 @@
 .home {
-    background-color: #000; 
-    color: #fff;           
-    padding: 4rem 2rem;
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .home-container {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    gap: 3rem;
-    max-width: 1200px;
-    width: 100%;
-    justify-content: space-between;
-  }
-  
-  .home-text {
-    flex: 1;
-    min-width: 280px;
-  }
-  
-  .home-text h1 {
-    font-size: 2.8rem;
-    margin-bottom: 0.5rem;
-  }
-  
-  .highlight {
-    color: #00adb5; /* accent color */
-  }
-  
-  .home-text h2 {
-    font-size: 1.4rem;
-    color: #ccc;
-    margin-bottom: 1rem;
-  }
-  
-  .home-text p {
-    font-size: 1.1rem;
-    line-height: 1.6;
-    color: #aaa;
-  }
-  
- 
+  background: linear-gradient(to bottom, #000000, #0a0a0a);
+  color: #fff;
+  padding: 4rem 2rem;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.home-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: 1000px;
+  width: 100%;
+  animation: fadeSlideUp 1.2s ease forwards;
+}
+
+.home-text {
+  max-width: 700px;
+  text-align: left;
+}
+
+.home-text h1 {
+  font-size: 3.2rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.highlight {
+  color: #00adb5;
+}
+
+.typing-effect {
+  font-size: 1.6rem;
+  color: #00adb5;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.home-text p {
+  font-size: 1.15rem;
+  line-height: 1.8;
+  color: #cccccc;
+  margin-top: 1rem;
+}
+.tagline {
+  font-style: italic;
+  color: #888;
+  margin-top: 1rem;
+  font-size: 1rem;
+}
+
 @keyframes fadeSlideUp {
-    0% {
-      opacity: 0;
-      transform: translateY(30px);
-    }
-    100% {
-      opacity: 1;
-      transform: translateY(0);
-    }
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
   }
-  
-  .fade-in {
-    animation: fadeSlideUp 1.2s ease forwards;
+  100% {
+    opacity: 1;
+    transform: translateY(0);
   }
+}
+
+@media screen and (max-width: 768px) {
+  .home-text h1 {
+    font-size: 2.4rem;
+  }
+
   .typing-effect {
-    font-size: 1.4rem;
-    color: #00adb5;
-    margin-bottom: 1rem;
-    font-weight: bold;
-    white-space: nowrap;
+    font-size: 1.3rem;
   }
-  
+
+  .home-text p {
+    font-size: 1rem;
+  }
+}
+.smoke-dot {
+  position: absolute;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 9999;
+  opacity: 0.25;
+  filter: blur(12px);
+  animation: smokeFade 0.7s ease-out forwards;
+  transform: translate(-50%, -50%);
+}
+
+@keyframes smokeFade {
+  from {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 0.25;
+  }
+  to {
+    transform: translate(-50%, -50%) scale(2);
+    opacity: 0;
+  }
+}
